@@ -1,41 +1,56 @@
-# Hey, I'm Vinay Kumar 👋
+# Hi, I'm Vinay 👋
 
-[![Portfolio](https://img.shields.io/badge/PORTFOLIO-vinaykumar.work-111111?style=for-the-badge)](https://vinaykumar.work)
-[![X](https://img.shields.io/badge/@visuallyvinay-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/visuallyvinay)
-<!-- LINKEDIN: send me your profile URL and I'll swap it in
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](LINKEDIN_URL_HERE)
--->
+Growth and performance marketer with 6+ years in B2B SaaS and fintech. I also build the tools I run campaigns with.
 
-## 🧠 About Me
+I started on paid ads, moved into product marketing at Volopay, then began writing my own dashboards because waiting on reports slowed everything down. Now I use Claude Code to turn repetitive marketing work into software. The AI does the building, and I set the rules and approve the output.
 
-I'm a growth and product marketer who builds his own tooling. Five-plus years across B2B SaaS and fintech — paid acquisition, GTM, demand gen — most recently at [Revv Growth](https://revvgrowth.com), before that product marketing at Volopay (YC S20).
+Stack: Python • FastAPI • Claude Code • Google, Meta and LinkedIn Ads APIs • GA4
 
-The short version: I got tired of waiting on dashboards, so I started writing the dashboards. Google Ads and LinkedIn Ads APIs, SEO competitive intelligence, AI answer-engine visibility, outbound CRMs, a job scanner that runs itself every morning. Marketing work, engineered.
+💼 Open to growth, performance and product marketing roles.
 
-Most of what I build is agent-driven — Claude Code doing the heavy lifting, me doing the judgment calls. That split is the whole thesis.
+[Portfolio](https://vinaykumar.work) • [LinkedIn](https://www.linkedin.com/in/vinaykumardm) • [X](https://x.com/visuallyvinay)
 
-## 📈 What I've Shipped
+## Results
 
-- **Google Ads operator stack** — API-driven audits, search-term waste control, negative keyword drafting, RSA generation. Human approves, script executes.
-- **AEO/GEO audit pipeline** — 1,200+ line discover → categorize → audit system measuring brand visibility inside AI answers, not just blue links.
-- **AI SEO competitive intelligence** — automated competitor teardowns with scoring, BOF keyword mapping, and multi-platform coverage.
-- **Agency ad dashboards** — unified Meta Ads reporting across 21 client accounts; a separate MCC dashboard covering 12 sub-accounts with safe-mode write control.
-- **Job Radar** — multi-source job scanner (ATS boards, LinkedIn, YC, Remotive) with geographic lane scoring and a status-tracking dashboard. 6,000+ raw postings per scan, filtered to the handful that matter.
-- **LinkedIn ABM dashboard** — live engagement tracking against a target account list, daily deltas, refresh on demand.
+- **Volopay (YC S20):** ran GTM across 4 APAC markets, contributing $2.5M+ to ARR growth
+- **Volopay paid funnels:** lead costs down 68%, lead volume up 120%
+- **Itilite:** leads up 36%, qualified opportunities doubled
+- **Identity and fraud company:** lead-to-MQL rate up 38% in the top-performing segment over 3 months
+- **Ad operations tools:** monitoring and campaign pushes across 7 ad accounts, execution time down 96%
 
-Pattern's consistent: find the repetitive judgment, encode the rules, keep the human on the approve button.
+## Projects
 
-## 🎨 Learnings and Hobbies
+All screenshots use made-up brands and numbers unless the project says otherwise. No client data is in these repos.
 
-- I log what I want to improve. If it isn't tracked, it didn't happen.
-- I write for a living and still think the hardest part is deleting the second paragraph.
-- Design and marketing overlap more than either side admits. I keep one foot in each.
-- Ship the ugly version Friday. Make it good Monday.
+[website-error-finder](https://github.com/vinay123kum/website-error-finder) crawls a site, runs browser tests and gives you a prioritised list of what's broken.
 
-## 🛠 Working With
+<img src="https://raw.githubusercontent.com/vinay123kum/website-error-finder/main/docs/dashboard.png" alt="website-error-finder dashboard" width="640">
 
-`Python` · `Google Ads API` · `LinkedIn Ads API` · `Meta Ads API` · `FastAPI` · `SQLite` · `Claude Code / MCP` · `n8n` · `Make.com` · `GA4` · `Search Console`
+[meta-ads-dashboard](https://github.com/vinay123kum/meta-ads-dashboard) shows spend, results and creative fatigue across every Meta ad account in one place.
 
----
+<img src="https://raw.githubusercontent.com/vinay123kum/meta-ads-dashboard/main/docs/overview.png" alt="meta-ads-dashboard overview" width="640">
 
-📬 Open to Product Marketing, Growth, and Demand Gen roles — and to talking shop about agent-built marketing systems. Reach me via [vinaykumar.work](https://vinaykumar.work).
+[linkedin-predictor](https://github.com/vinay123kum/linkedin-predictor) forecasts LinkedIn Ads problems before they cost money: CPL trends, creative fatigue and InMail saturation.
+
+<img src="https://raw.githubusercontent.com/vinay123kum/linkedin-predictor/main/docs/dashboard.png" alt="linkedin-predictor dashboard" width="640">
+
+[aeo-checker](https://github.com/vinay123kum/aeo-checker) takes one URL and scores how often AI answers cite that brand against its competitors.
+
+<img src="https://raw.githubusercontent.com/vinay123kum/aeo-checker/main/docs/report.png" alt="aeo-checker report" width="640">
+
+### More
+
+**Ads**
+- [google-ads-operator](https://github.com/vinay123kum/google-ads-operator): Google Ads audit scripts and a Slack bot, with a human approving changes
+- [creative-qa-checker](https://github.com/vinay123kum/creative-qa-checker): uses Claude to check videos and static ads for mistakes before they go out
+- [reel-builder](https://github.com/vinay123kum/reel-builder): builds a Reel from a JSON file
+
+**AI search and SEO**
+- [llm-visibility-tracker](https://github.com/vinay123kum/llm-visibility-tracker): tracks brand citations across LLMs
+- [seo-competitive-intel](https://github.com/vinay123kum/seo-competitive-intel): AI visibility gap report against competitors
+
+**Research**
+- [hera-influencer-scout](https://github.com/vinay123kum/hera-influencer-scout): finds and scores YouTube and X creators with evidence, and never sends outreach itself
+- [nse-stock-screener](https://github.com/vinay123kum/nse-stock-screener): screens NSE small and mid caps, not investment advice
+
+Built with Claude Code. I set the design and rules and review the output.
