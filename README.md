@@ -85,7 +85,7 @@ About 4,000 lines of Python on FastAPI and SQLite.
 - [seo-competitive-intel](https://github.com/vinay123kum/seo-competitive-intel): AI visibility gap report against competitors
 
 **Research**
-- [hera-influencer-scout](https://github.com/vinay123kum/hera-influencer-scout): finds and scores YouTube and X creators with evidence, and never sends outreach itself
+- [creator-scout](https://github.com/vinay123kum/creator-scout): finds and scores YouTube and X creators with evidence, and never sends outreach itself
 - [nse-stock-screener](https://github.com/vinay123kum/nse-stock-screener): screens NSE small and mid caps, not investment advice
 
 Built with Claude Code. I set the design and rules and review the output.
