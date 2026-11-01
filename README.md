@@ -22,6 +22,41 @@ Stack: Python • FastAPI • Claude Code • Google, Meta and LinkedIn Ads APIs
 
 All screenshots use made-up brands and numbers unless the project says otherwise. No client data is in these repos.
 
+### Revenue dashboard (private client project, no public repo)
+
+Live dashboard for a 15-location US business. Ad platforms only report their own conversions, so it ties each booked purchase back to its UTM tag and shows revenue against spend by channel, location and month.
+
+<img src="docs/revenue-dashboard.png" alt="Revenue dashboard with scrambled locations and numbers" width="640">
+
+**9 sources connected, synced every night**
+
+| Source | What it adds |
+|---|---|
+| Google Ads API | 14 accounts: spend, clicks, conversions |
+| Meta Marketing API | 18 accounts: spend, clicks, conversions |
+| GA4 Data API | 11 properties: traffic and funnel |
+| Instagram | Follower counts for linked accounts |
+| Google Sheets (5) | Purchases, add-to-cart, Google form leads, Meta form leads, UTM classification |
+
+**How it tracks UTMs**
+
+- Covers 108 UTM sources and 380 source, medium and campaign combinations across 24,000+ purchase lines
+- Reads a 200+ row classification sheet live, so a change to the sheet shows up on the next refresh
+- Sorts inconsistent tags like `ig`, `insta` and `Instagram_Feed` into the right channel by source family when a tag isn't in the sheet
+- Flags new tags as unclassified and keeps them out of channel totals
+- Shows revenue from email, SMS and ChatGPT, which no ad platform reports
+
+**Where the complexity is**
+
+- Purchases only count if they carry a UTM source, so untagged walk-ins never inflate ROAS
+- Revenue is parsed out of a free-text product field, because the deposit and quantity columns give wrong totals
+- Repeat records from the booking system are hidden only when customer, amount and products match within 120 seconds, so real repeat customers stay
+- Customers are matched on a hashed email or phone, and raw values are never stored
+- Accounts that moved are summed by location, and new Meta accounts are picked up automatically
+- ROAS and net ROI are recalculated from raw rows, never read from a sheet
+
+About 4,000 lines of Python on FastAPI and SQLite.
+
 [website-error-finder](https://github.com/vinay123kum/website-error-finder) crawls a site, runs browser tests and gives you a prioritised list of what's broken.
 
 <img src="https://raw.githubusercontent.com/vinay123kum/website-error-finder/main/docs/dashboard.png" alt="website-error-finder dashboard" width="640">
