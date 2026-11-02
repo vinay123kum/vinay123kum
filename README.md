@@ -76,16 +76,15 @@ Point it at your own site for a rewrite list, or at a competitor's to see which 
 
 ### ABM thought leadership tracker (private client project)
 
-Reporting on this LinkedIn campaign used to be a weekly export nobody could ask a follow-up question of. This dashboard tracks it against a fixed list of 893 target companies and answers the one question that matters: which accounts are warming up, and who inside them is clicking?
+One platform for marketing and sales outreach. It tracks a LinkedIn campaign against 893 target companies, then ranks who to contact next at the accounts that clicked.
 
 <img src="docs/abm-dashboard.png" alt="LinkedIn ABM tracker with company names blurred" width="640">
 
 - 355 of 893 target companies engaged: 60 clicked, 295 warm
+- 181 named follow-ups ranked, with people already approached removed
 - 5.91% click rate against a sub-1% B2B benchmark
-- CEO, Co-Founder and Founder are the top three titles clicking, so the targeting reached buyers
-- Only on-list companies count, and warm means repeat impressions, never a click
 
-Built on FastAPI and SQLite, straight off the LinkedIn Ads API. These are real campaign numbers, with company names blurred.
+[Read the full case study](https://vinaykumar.work/abm-thought-leadership-tracker.html)
 
 ### More
 
