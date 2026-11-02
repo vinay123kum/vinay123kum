@@ -20,7 +20,7 @@ Stack: Python • FastAPI • Claude Code • Google, Meta and LinkedIn Ads APIs
 
 ## Projects
 
-All screenshots use made-up brands and numbers unless the project says otherwise. No client data is in these repos.
+Screenshots use made-up brands and numbers unless a project says otherwise. No client data is in the public repos.
 
 ### Revenue dashboard (private client project, no public repo)
 
@@ -57,21 +57,35 @@ Live dashboard for a 15-location US business. Ad platforms only report their own
 
 About 4,000 lines of Python on FastAPI and SQLite.
 
-[website-error-finder](https://github.com/vinay123kum/website-error-finder) crawls a site, runs browser tests and gives you a prioritised list of what's broken.
-
-<img src="https://raw.githubusercontent.com/vinay123kum/website-error-finder/main/docs/dashboard.png" alt="website-error-finder dashboard" width="640">
-
-[meta-ads-dashboard](https://github.com/vinay123kum/meta-ads-dashboard) shows spend, results and creative fatigue across every Meta ad account in one place.
-
-<img src="https://raw.githubusercontent.com/vinay123kum/meta-ads-dashboard/main/docs/overview.png" alt="meta-ads-dashboard overview" width="640">
+### linkedin-predictor
 
 [linkedin-predictor](https://github.com/vinay123kum/linkedin-predictor) forecasts LinkedIn Ads problems before they cost money: CPL trends, creative fatigue and InMail saturation.
 
 <img src="https://raw.githubusercontent.com/vinay123kum/linkedin-predictor/main/docs/dashboard.png" alt="linkedin-predictor dashboard" width="640">
 
-[aeo-checker](https://github.com/vinay123kum/aeo-checker) takes one URL and scores how often AI answers cite that brand against its competitors.
+### AEO/GEO audit pipeline (private repo)
 
-<img src="https://raw.githubusercontent.com/vinay123kum/aeo-checker/main/docs/report.png" alt="aeo-checker report" width="640">
+Buyers now ask AI tools instead of searching, and a page can rank on Google without ever being cited in an AI answer. A content team can't check hundreds of URLs by hand, so this finds which pages to fix first and what competitors do better.
+
+- **Discover:** reads a domain's robots.txt and sitemaps and pulls every content URL
+- **Categorize:** sorts each URL by content type, intent and topic, then gives it a priority score
+- **Audit:** scores each page against 31 AEO/GEO criteria, with a grade, critical failures and top fixes
+- **Report:** one HTML summary per run, so you can compare your domain with competitors
+
+Point it at your own site for a rewrite list, or at a competitor's to see which pages set the bar.
+
+### ABM thought leadership tracker (private client project)
+
+Reporting on this LinkedIn campaign used to be a weekly export nobody could ask a follow-up question of. This dashboard tracks it against a fixed list of 893 target companies and answers the one question that matters: which accounts are warming up, and who inside them is clicking?
+
+<img src="docs/abm-dashboard.png" alt="LinkedIn ABM tracker with company names blurred" width="640">
+
+- 355 of 893 target companies engaged: 60 clicked, 295 warm
+- 5.91% click rate against a sub-1% B2B benchmark
+- CEO, Co-Founder and Founder are the top three titles clicking, so the targeting reached buyers
+- Only on-list companies count, and warm means repeat impressions, never a click
+
+Built on FastAPI and SQLite, straight off the LinkedIn Ads API. These are real campaign numbers, with company names blurred.
 
 ### More
 
@@ -81,10 +95,12 @@ About 4,000 lines of Python on FastAPI and SQLite.
 - [reel-builder](https://github.com/vinay123kum/reel-builder): builds a Reel from a JSON file
 
 **AI search and SEO**
+- [aeo-checker](https://github.com/vinay123kum/aeo-checker): takes one URL and scores how often AI answers cite that brand against its competitors
 - [llm-visibility-tracker](https://github.com/vinay123kum/llm-visibility-tracker): tracks brand citations across LLMs
 - [seo-competitive-intel](https://github.com/vinay123kum/seo-competitive-intel): AI visibility gap report against competitors
 
-**Research**
+**Websites and research**
+- [website-error-finder](https://github.com/vinay123kum/website-error-finder): crawls a site, runs browser tests and gives you a prioritised list of what's broken
 - [creator-scout](https://github.com/vinay123kum/creator-scout): finds and scores YouTube and X creators with evidence, and never sends outreach itself
 - [nse-stock-screener](https://github.com/vinay123kum/nse-stock-screener): screens NSE small and mid caps, not investment advice
 
