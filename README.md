@@ -91,7 +91,7 @@ One platform for marketing and sales outreach. It tracks a LinkedIn campaign aga
 **Ads**
 - [google-ads-operator](https://github.com/vinay123kum/google-ads-operator): Google Ads audit scripts and a Slack bot, with a human approving changes
 - [creative-qa-checker](https://github.com/vinay123kum/creative-qa-checker): uses Claude to check videos and static ads for mistakes before they go out
-- [reel-builder](https://github.com/vinay123kum/reel-builder): builds a Reel from a JSON file
+- [reel-builder](https://github.com/vinay123kum/reel-builder): cut 300 mostly identical Reels a month down to 3 to 4 minutes each, using templates taught on past videos
 
 **AI search and SEO**
 - [aeo-checker](https://github.com/vinay123kum/aeo-checker): takes one URL and scores how often AI answers cite that brand against its competitors
